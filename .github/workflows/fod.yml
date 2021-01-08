@@ -71,7 +71,7 @@ jobs:
           FOD_USER: ${{ secrets.FOD_USER }}
           FOD_PAT: ${{ secrets.FOD_PAT }}
           FOD_RELEASE_ID: ${{ secrets.FOD_RELEASE_ID }}
-          FOD_URL: "https://gateway.saas.microfocus.com/msg/actions/showLogin?LWAP_REQ=cwEJhmP3tSOK5FAwHrSsjoTF01ct6YKjsHgY_BmO4OzhDztr2mIrtF4PEeAzJvJ91KuG2KrYq0lXDCm_6r3SPkob4GN9gzG02mzspD34VkNtnBgMok1tDCwNsQLJWIFF4CD86MB6_gDhc1A32Pv5tqNbd57AJ3bccd1ZEcYmmAeADuKf_GZofXUL4iIDIX4o0MI3SttOfHL0krjpHDjkLXikbpGCyaYko44lSjNgeos."
+          FOD_URL: "https://trial.fortify.com/"
           FOD_API_URL: "https://api.trial.fortify.com/"
           FOD_UPLOADER_OPTS: "-ep 2 -pp 0 -I 1 -apf"
           FOD_UPLOADER_NOTES: 'Triggered by GitHub Actions (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})'
@@ -81,7 +81,7 @@ jobs:
       - name: Download Results
         uses: fortify/gha-fod-generate-sarif@1.1.0
         with:
-          base-url: https://gateway.saas.microfocus.com/msg/actions/showLogin?LWAP_REQ=cwEJhmP3tSOK5FAwHrSsjoTF01ct6YKjsHgY_BmO4OzhDztr2mIrtF4PEeAzJvJ91KuG2KrYq0lXDCm_6r3SPkob4GN9gzG02mzspD34VkNtnBgMok1tDCwNsQLJWIFF4CD86MB6_gDhc1A32Pv5tqNbd57AJ3bccd1ZEcYmmAeADuKf_GZofXUL4iIDIX4o0MI3SttOfHL0krjpHDjkLXikbpGCyaYko44lSjNgeos.
+          base-url: https://trial.fortify.com
           tenant: ${{ secrets.FOD_TENANT }}
           user: ${{ secrets.FOD_USER }}
           password: ${{ secrets.FOD_PAT }}
